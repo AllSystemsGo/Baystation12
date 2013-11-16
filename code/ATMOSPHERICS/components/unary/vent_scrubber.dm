@@ -16,8 +16,8 @@
 	var/on = 0
 	var/scrubbing = 1 //0 = siphoning, 1 = scrubbing
 	var/scrub_CO2 = 1
-	var/scrub_Toxins = 0
-	var/scrub_N2O = 0
+	var/scrub_Toxins = 1
+	var/scrub_N2O = 1
 
 	var/volume_rate = 120
 	var/panic = 0 //is this scrubber panicked?
@@ -26,6 +26,8 @@
 	var/radio_filter_out
 	var/radio_filter_in
 	New()
+		scrub_Toxins = 1
+		scrub_N2O = 1
 		initial_loc = get_area(loc)
 		if (initial_loc.master)
 			initial_loc = initial_loc.master

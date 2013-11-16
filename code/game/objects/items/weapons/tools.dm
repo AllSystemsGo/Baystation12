@@ -406,6 +406,10 @@
 	m_amt = 70
 	g_amt = 120
 	origin_tech = "engineering=4;plasma=3"
+<<<<<<< HEAD
+=======
+	icon_state = "welder"
+>>>>>>> remotes/origin/master
 	var/last_gen = 0
 
 

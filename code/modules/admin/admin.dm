@@ -13,12 +13,14 @@ var/global/floorIsLava = 0
 
 /proc/msg_admin_attack(var/text) //Toggleable Attack Messages
 	log_attack(text)
-	var/rendered = "<span class=\"admin\"><span class=\"prefix\">ATTACK:</span> <span class=\"message\">[text]</span></span>"
-	for(var/client/C in admins)
-		if(R_ADMIN & C.holder.rights)
-			if(C.prefs.toggles & CHAT_ATTACKLOGS)
-				var/msg = rendered
-				C << msg
+	// The following is now done in log_attack so admins receive a more thorough attack log
+	// -ASG
+//	var/rendered = "<span class=\"admin\"><span class=\"prefix\">ATTACK:</span> <span class=\"message\">[text]</span></span>"
+//	for(var/client/C in admins)
+//		if(R_ADMIN & C.holder.rights)
+//			if(C.prefs.toggles & CHAT_ATTACKLOGS)
+//				var/msg = rendered
+//				C << msg
 
 
 ///////////////////////////////////////////////////////////////////////////////////////////////Panels

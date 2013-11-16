@@ -442,7 +442,7 @@
 				m_type = 1
 			else
 				if (!muzzled)
-					message = "<B>[src]</B> snores."
+					//message = "<B>[src]</B> snores."
 					m_type = 2
 				else
 					message = "<B>[src]</B> makes a noise."

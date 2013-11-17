@@ -113,6 +113,29 @@
 	playsound(loc, 'sound/weapons/bladeslice.ogg', 50, 1, -1)
 	return ..()
 
+/obj/item/weapon/laynflame
+	name = "Layn's Flame"
+	desc = "What an odd sword..."
+	icon_state = "layns_flame"
+	item_state = "layns_flame"
+	flags = FPRINT | TABLEPASS | CONDUCT
+	slot_flags = SLOT_BELT
+	force = 40
+	throwforce = 10
+	w_class = 3
+	attack_verb = list("attacked", "slashed", "stabbed", "sliced", "torn", "ripped", "diced", "cut")
+
+	IsShield()
+		return 1
+
+	suicide_act(mob/user)
+		viewers(user) << "\red <b>[user] is falling on the [src.name]! It looks like \he's trying to commit suicide.</b>"
+		return(BRUTELOSS)
+
+/obj/item/weapon/laynflame/attack(mob/living/carbon/M as mob, mob/living/carbon/user as mob)
+	playsound(loc, 'sound/weapons/bladeslice.ogg', 50, 1, -1)
+	return ..()
+
 /obj/item/weapon/katana
 	name = "katana"
 	desc = "Woefully underpowered in D20"

@@ -337,7 +337,8 @@ var/list/slot_equipment_priority = list( \
 	set name = "Respawn"
 	set category = "OOC"
 
-	if (!( abandon_allowed ))
+	//Admins can respawn even if it's disabled. Thanks to Morg.
+	if (!( abandon_allowed ) && (!check_rights(R_ADMIN)))
 		usr << "\blue Respawn is disabled."
 		return
 	if ((stat != 2 || !( ticker )))
@@ -346,6 +347,9 @@ var/list/slot_equipment_priority = list( \
 	if (ticker.mode.name == "meteor" || ticker.mode.name == "epidemic") //BS12 EDIT
 		usr << "\blue Respawn is disabled."
 		return
+
+	/* Removed the respawn timing check. If it's enabled, we want them able to respawn. --ASG
+
 	else
 		var/deathtime = world.time - src.timeofdeath
 		var/deathtimeminutes = round(deathtime / 600)
@@ -363,6 +367,7 @@ var/list/slot_equipment_priority = list( \
 			return
 		else
 			usr << "You can respawn now, enjoy your new life!"
+	*/
 
 	log_game("[usr.name]/[usr.key] used abandon mob.")
 

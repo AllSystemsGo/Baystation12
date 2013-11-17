@@ -1,10 +1,10 @@
 // BEGIN_INTERNALS
 /*
 MAP_ICON_TYPE: 0
-WINDOW: icons\mob\uniform.dmi;code\modules\clothing\under\Sancunder.dm;code\modules\clothing\under\jobs\medsci.dm;icons\obj\clothing\uniforms.dmi
+WINDOW: icons\mob\uniform.dmi;code\modules\clothing\under\Sancunder.dm;code\modules\clothing\under\jobs\medsci.dm;icons\obj\clothing\uniforms.dmi;icons\obj\clothing\hats.dmi;icons\mob\suit.dmi;icons\mob\head.dmi;icons\obj\clothing\suits.dmi;code\modules\mob\new_player\sprite_accessories.dm
 LAST_COMPILE_VERSION: 500.1213
-DIR: code code\ATMOSPHERICS\components code\ATMOSPHERICS\components\unary code\game\gamemodes code\game\machinery code\game\machinery\kitchen code\game\objects code\game\objects\items code\game\objects\items\weapons code\modules code\modules\clothing code\modules\clothing\under code\modules\clothing\under\jobs icons icons\mob icons\obj icons\obj\clothing maps 
-FILE: icons\obj\clothing\uniforms.dmi
+DIR: code code\ATMOSPHERICS\components code\ATMOSPHERICS\components\unary code\game\gamemodes code\game\machinery code\game\machinery\kitchen code\game\objects code\game\objects\items code\game\objects\items\weapons code\modules code\modules\clothing code\modules\clothing\under code\modules\clothing\under\jobs code\modules\mob code\modules\mob\new_player icons icons\mob icons\obj icons\obj\clothing 
+FILE: code\modules\mob\new_player\sprite_accessories.dm
 LAST_COMPILE_TIME: 1384552934
 AUTO_FILE_DIR: OFF
 */

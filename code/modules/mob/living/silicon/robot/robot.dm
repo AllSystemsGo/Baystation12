@@ -166,8 +166,6 @@
 			module_sprites["Basic"] = "robot_old"
 			module_sprites["Android"] = "droid"
 			module_sprites["Default"] = "robot"
-			module_sprites["Sydrec Standard"] = "sydrec-Standard"
-			module_sprites["Ravensdale Standard"] = "ravensdale-Standard"
 
 		if("Service")
 			module = new /obj/item/weapon/robot_module/butler(src)
@@ -176,8 +174,6 @@
 			module_sprites["Bro"] = "Brobot"
 			module_sprites["Rich"] = "maximillion"
 			module_sprites["Default"] = "Service2"
-			module_sprites["Sydrec Service"] = "sydrec-Service"
-			module_sprites["Ravensdale Service"] = "ravensdale-Service"
 
 		if("Miner")
 			module = new /obj/item/weapon/robot_module/miner(src)
@@ -187,8 +183,6 @@
 			module_sprites["Basic"] = "Miner_old"
 			module_sprites["Advanced Droid"] = "droid-miner"
 			module_sprites["Treadhead"] = "Miner"
-			module_sprites["Sydrec Miner"] = "sydrec-Miner"
-			module_sprites["Ravensdale Miner"] = "ravensdale-Miner"
 
 		if("Medical")
 			module = new /obj/item/weapon/robot_module/medical(src)
@@ -199,8 +193,6 @@
 			module_sprites["Advanced Droid"] = "droid-medical"
 			module_sprites["Needles"] = "medicalrobot"
 			module_sprites["Standard"] = "surgeon"
-			module_sprites["Sydrec Medical"] = "sydrec-Medical"
-			module_sprites["Ravensdale Medical"] = "ravensdale-Medical"
 
 		if("Security")
 			module = new /obj/item/weapon/robot_module/security(src)
@@ -209,8 +201,6 @@
 			module_sprites["Red Knight"] = "Security"
 			module_sprites["Black Knight"] = "securityrobot"
 			module_sprites["Bloodhound"] = "bloodhound"
-			module_sprites["Sydrec Security"] = "sydrec-Security"
-			module_sprites["Ravensdale Security"] = "ravensdale-Security"
 
 		if("Engineering")
 			module = new /obj/item/weapon/robot_module/engineering(src)
@@ -220,16 +210,12 @@
 			module_sprites["Basic"] = "Engineering"
 			module_sprites["Antique"] = "engineerrobot"
 			module_sprites["Landmate"] = "landmate"
-			module_sprites["Sydrec Engineering"] = "sydrec-Engineering"
-			module_sprites["Ravensdale Engineering"] = "ravensdale-Engineering"
 
 		if("Janitor")
 			module = new /obj/item/weapon/robot_module/janitor(src)
 			module_sprites["Basic"] = "JanBot2"
 			module_sprites["Mopbot"]  = "janitorrobot"
 			module_sprites["Mop Gear Rex"] = "mopgearrex"
-			module_sprites["Sydrec Custodial"] = "sydrec-Janitor"
-			module_sprites["Ravensdale Custodial"] = "ravensdale-Janitor"
 
 		if("Combat")
 			module = new /obj/item/weapon/robot_module/combat(src)

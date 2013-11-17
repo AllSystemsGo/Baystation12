@@ -292,6 +292,10 @@
 	bald
 		name = "Bald"
 		icon_state = "bald"
+
+	medium
+		name = "Medium"
+		icon_state = "hair_medium"
 /*
 ///////////////////////////////////
 /  =---------------------------=  /
@@ -453,6 +457,48 @@
 	skr_clothtentacle_f
 		name = "Cloth draped Skrell Female Tentacles"
 		icon_state = "skrell_clothhair_f"
+		species_allowed = list("Skrell")
+		gender = FEMALE
+		do_colouration = 0
+
+	skr_tentacle2_m
+		name = "Skrell Male Tentacles Alt"
+		icon_state = "skrell_hair2_m"
+		species_allowed = list("Skrell")
+		gender = MALE
+		do_colouration = 0
+
+	skr_tentacle2_f
+		name = "Skrell Female Tentacles Alt"
+		icon_state = "skrell_hair2_f"
+		species_allowed = list("Skrell")
+		gender = FEMALE
+		do_colouration = 0
+
+	skr_gold2_m
+		name = "Gold plated Skrell Male Tentacles Alt"
+		icon_state = "skrell_goldhair2_m"
+		species_allowed = list("Skrell")
+		gender = MALE
+		do_colouration = 0
+
+	skr_gold2_f
+		name = "Gold chained Skrell Female Tentacles Alt"
+		icon_state = "skrell_goldhair2_f"
+		species_allowed = list("Skrell")
+		gender = FEMALE
+		do_colouration = 0
+
+	skr_clothtentacle2_m
+		name = "Cloth draped Skrell Male Tentacles Alt"
+		icon_state = "skrell_clothhair2_m"
+		species_allowed = list("Skrell")
+		gender = MALE
+		do_colouration = 0
+
+	skr_clothtentacle2_f
+		name = "Cloth draped Skrell Female Tentacles Alt"
+		icon_state = "skrell_clothhair2_f"
 		species_allowed = list("Skrell")
 		gender = FEMALE
 		do_colouration = 0

@@ -23,3 +23,19 @@
 	item_state = "partydress"
 	item_color = "partydress"
 	flags = FPRINT | TABLEPASS
+
+/obj/item/clothing/under/mensjeans
+	name = "Men's Jeans"
+	desc = "For the working man. Or one can wear it for the style, but these do not come pre-ripped."
+	icon_state = "mensjeans"
+	item_state = "mensjeans"
+	item_color = "mensjeans"
+	flags = FPRINT | TABLEPASS
+
+/obj/item/clothing/under/sauditalos
+	name = "Saudi Talos Dress"
+	desc = "A satin dress the color of garnets that looks like it is of Arabian heritage."
+	icon_state = "sauditalos"
+	item_state = "sauditalos"
+	item_color = "sauditalos"
+	flags = FPRINT | TABLEPASS

@@ -1139,3 +1139,13 @@ proc/move_alien_ship()
 	else
 		alien_ship_location = 1
 	return
+
+/********************** Sanctuary custom **************************/
+
+
+//Thanks Morg!
+/datum/admins/proc/check_whitelist()
+	set name = "Check Whitelist"
+	set desc = "Show All Players In The Whitelist."
+	set category = "Admin"
+	src << browse(file('data/whitelist.txt'), "window=rules;size=480x320")

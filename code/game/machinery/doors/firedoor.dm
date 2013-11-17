@@ -1,9 +1,9 @@
 /var/const/OPEN = 1
 /var/const/CLOSED = 2
 /obj/machinery/door/firedoor
-	name = "\improper Emergency Shutter"
-	desc = "Emergency air-tight shutter, capable of sealing off breached areas."
-	icon = 'icons/obj/doors/DoorHazard.dmi'
+	name = "\improper Emergency Firelock"
+	desc = "Emergency air-tight shutter, capable of sealing off breached areas. Apply Crowbar."
+	icon = 'icons/obj/doors/Doorfire.dmi'
 	icon_state = "door_open"
 	req_one_access = list(access_atmospherics, access_engine_equip)
 	opacity = 0
@@ -94,13 +94,16 @@
 		A = A.master
 	var/alarmed = A.air_doors_activated || A.fire
 
-	var/answer = alert(user, "Would you like to [density ? "open" : "close"] this [src.name]?[ alarmed && density ? "\nNote that by doing so, you acknowledge any damages from opening this\n[src.name] as being your own fault, and you will be held accountable under the law." : ""]",\
-	"\The [src]", "Yes, [density ? "open" : "close"]", "No")
-	if(answer == "No")
-		return
-	if(user.stat || !user.canmove || user.stunned || user.weakened || user.paralysis || get_dist(src, user) > 1)
-		user << "Sorry, you must remain able bodied and close to \the [src] in order to use it."
-		return
+	//This may cause some deaths... but you know, I get so sick and tired of people going into and out of
+	//decompressed areas.... causing further decomp, death... maybe, just maybe, it'll help more than it hurts.
+
+//	var/answer = alert(user, "Would you like to [density ? "open" : "close"] this [src.name]?[ alarmed && density ? "\nNote that by doing so, you acknowledge any damages from opening this\n[src.name] as being your own fault, and you will be held accountable under the law." : ""]",\
+//	"\The [src]", "Yes, [density ? "open" : "close"]", "No")
+//	if(answer == "No")
+//		return
+//	if(user.stat || !user.canmove || user.stunned || user.weakened || user.paralysis || get_dist(src, user) > 1)
+//		user << "Sorry, you must remain able bodied and close to \the [src] in order to use it."
+//		return
 
 	var/needs_to_close = 0
 	if(density)

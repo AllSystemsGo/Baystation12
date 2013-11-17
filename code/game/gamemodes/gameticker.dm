@@ -45,7 +45,7 @@ var/global/datum/controller/gameticker/ticker
 	'sound/music/halloween/ghosts.ogg'*/
 	'sound/music/space.ogg',\
 	'sound/music/traitor.ogg',\
-	'sound/music/title.ogg',\
+	'sound/music/title1.ogg',\
 	'sound/music/1.ogg',\
 	'sound/music/b12_combined_start.ogg',\
 	'sound/music/title2.ogg'/*,\

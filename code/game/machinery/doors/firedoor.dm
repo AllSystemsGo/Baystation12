@@ -105,6 +105,8 @@
 //		user << "Sorry, you must remain able bodied and close to \the [src] in order to use it."
 //		return
 
+	return
+
 	var/needs_to_close = 0
 	if(density)
 		if(alarmed)

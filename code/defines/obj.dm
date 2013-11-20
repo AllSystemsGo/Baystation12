@@ -80,15 +80,12 @@
 			var/name = t.fields["name"]
 			var/rank = t.fields["rank"]
 			var/real_rank = t.fields["real_rank"]
-			if(OOC)
-				var/active = 0
-				for(var/mob/M in player_list)
-					if(M.real_name == name && M.client && M.client.inactivity <= 10 * 60 * 10)
-						active = 1
-						break
-				isactive[name] = active ? "Active" : "Inactive"
-			else
-				isactive[name] = t.fields["p_stat"]
+			var/active = 0
+			for(var/mob/M in player_list)
+				if(M.real_name == name && M.client && M.client.inactivity <= 10 * 60 * 10)
+					active = 1
+					break
+			isactive[name] = active ? "Active" : "SSD"
 
 			//world << "[name]: [rank]"
 

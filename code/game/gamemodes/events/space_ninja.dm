@@ -1,4 +1,4 @@
-/*
+ï»¿/*
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 +++++++++++++++++++++++++++++++++++++//                //++++++++++++++++++++++++++++++++++
 ======================================SPACE NINJA SETUP====================================
@@ -547,7 +547,7 @@ As such, it's hard-coded for now. No reason for it not to be, really.
 	equip_to_slot_or_del(new /obj/item/device/flashlight(src), slot_belt)
 	equip_to_slot_or_del(new /obj/item/weapon/plastique(src), slot_r_store)
 	equip_to_slot_or_del(new /obj/item/weapon/plastique(src), slot_l_store)
-	equip_to_slot_or_del(new /obj/item/weapon/tank/emergency_oxygen(src), slot_s_store)
+	equip_to_slot_or_del(new /obj/item/weapon/tank/oxygen(src), slot_s_store)
 	return 1
 
 //=======//HELPER PROCS//=======//
@@ -570,7 +570,7 @@ As such, it's hard-coded for now. No reason for it not to be, really.
 		U:gloves.item_state = "s-ninjan"
 	else
 		if(U.mind.special_role!="Ninja")
-			U << "\red <B>fÄTaL ÈÈRRoR</B>: 382200-*#00CÖDE <B>RED</B>\nUNAU†HORIZED USÈ DETÈC†††eD\nCoMMÈNCING SUB-R0U†IN3 13...\nTÈRMInATING U-U-USÈR..."
+			U << "\red <B>fï¾„TaL ï¾ˆï¾ˆRRoR</B>: 382200-*#00Cï¾–DE <B>RED</B>\nUNAUãƒ»ORIZED USï¾ˆ DETï¾ˆCãƒ»ãƒ»D\nCoMMï¾ˆNCING SUB-R0Uãƒ»N3 13...\nTï¾ˆRMInATING U-U-USï¾ˆR..."
 			U.gib()
 			return 0
 		if(!istype(U:head, /obj/item/clothing/head/helmet/space/space_ninja))

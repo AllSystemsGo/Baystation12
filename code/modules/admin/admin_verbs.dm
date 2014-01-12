@@ -71,13 +71,14 @@ var/list/admin_verbs_admin = list(
 	/datum/admins/proc/unprison,
 	/client/proc/man_up,
 	/client/proc/global_man_up,
-	/client/proc/response_team // Response Teams admin verb
+	/client/proc/response_team, // Response Teams admin verb
+	/client/proc/toggle_antagHUD_use,
+	/client/proc/toggle_antagHUD_restrictions,
+	/client/proc/allow_character_respawn    /* Allows a ghost to respawn */	
 )
 var/list/admin_verbs_ban = list(
 	/client/proc/unban_panel,
-	/client/proc/jobbans,
-	/client/proc/unjobban_panel,
-	// /client/proc/DB_ban_panel
+	/client/proc/jobbans
 	)
 var/list/admin_verbs_sounds = list(
 	/client/proc/play_local_sound,
@@ -141,7 +142,9 @@ var/list/admin_verbs_debug = list(
 	/client/proc/restart_controller,
 	/client/proc/enable_debug_verbs,
 	/client/proc/callproc,
-	/client/proc/toggledebuglogs
+	/client/proc/toggledebuglogs,
+	/client/proc/SDQL_query,
+	/client/proc/SDQL2_query
 	)
 var/list/admin_verbs_possess = list(
 	/proc/possess,

@@ -66,6 +66,9 @@ datum/controller/game_controller/proc/setup()
 	setupgenetics()
 	setupfactions()
 	setup_economy()
+	SetupXenoarch()
+
+	transfer_controller = new
 
 	for(var/i=0, i<max_secret_rooms, i++)
 		make_mining_asteroid_secret()
@@ -119,6 +122,7 @@ datum/controller/game_controller/proc/process()
 				controller_iteration++
 
 				vote.process()
+				transfer_controller.process()
 				process_newscaster()
 
 				//AIR
@@ -196,7 +200,7 @@ datum/controller/game_controller/proc/process()
 				timer = world.timeofday
 				process_nano()
 				nano_cost = (world.timeofday - timer) / 10
-				
+
 				sleep(breather_ticks)
 
 				//EVENTS

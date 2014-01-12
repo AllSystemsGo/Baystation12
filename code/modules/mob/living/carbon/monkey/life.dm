@@ -67,8 +67,11 @@
 		G.process()
 
 	if(!client && stat == CONSCIOUS)
-		if(prob(33) && canmove && isturf(loc))
+
+		if(prob(33) && canmove && isturf(loc) && !pulledby) //won't move if being pulled
+
 			step(src, pick(cardinal))
+
 		if(prob(1))
 			emote(pick("scratch","jump","roll","tail"))
 
@@ -250,7 +253,7 @@
 							block = 1
 
 					if(!block)
-						for(var/obj/effect/effect/chem_smoke/smoke in view(1, src))
+						for(var/obj/effect/effect/smoke/chem/smoke in view(1, src))
 							if(smoke.reagents.total_volume)
 								smoke.reagents.reaction(src, INGEST)
 								spawn(5)

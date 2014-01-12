@@ -1,4 +1,4 @@
-//For the love of god,space out your code! This is a nightmare to read.
+﻿//For the love of god,space out your code! This is a nightmare to read.
 
 //This file was auto-corrected by findeclaration.exe on 25.5.2012 20:42:31
 
@@ -167,7 +167,7 @@ ________________________________________________________________________________
 					U << "\blue Extending neural-net interface...\nNow monitoring brain wave pattern..."
 				if(3)
 					if(U.stat==2||U.health<=0)
-						U << "\red <B>FĆAL �Rr�R</B>: 344--93#�&&21 BR��N |/|/aV� PATT$RN <B>RED</B>\nA-A-aB�rT�NG..."
+						U << "\red <B>FÄAL ï¿½Rrï¿½R</B>: 344--93#ï¿½&&21 BRï¿½ï¿½N |/|/aVï¿½ PATT$RN <B>RED</B>\nA-A-aBï¿½rTï¿½NG..."
 						unlock_suit()
 						break
 					lock_suit(U,1)//Check for icons.
@@ -666,24 +666,24 @@ ________________________________________________________________________________
 							switch(i)
 								if(0)
 									A << "\red <b>WARNING</b>: \black purge procedure detected. \nNow hacking host..."
-									U << "\red <b>WARNING</b>: HACKING AT��TEMP� IN PR0GRESs!"
+									U << "\red <b>WARNING</b>: HACKING ATï¿½ï¿½TEMPï¿½ IN PR0GRESs!"
 									spideros = 0
 									k_unlock = 0
 									U << browse(null, "window=spideros")
 								if(1)
 									A << "Disconnecting neural interface..."
-									U << "\red <b>WAR�NING</b>: �R�O0�Gr�--S 2&3%"
+									U << "\red <b>WARï¿½NING</b>: ï¿½Rï¿½O0ï¿½Grï¿½--S 2&3%"
 								if(2)
 									A << "Shutting down external protocol..."
-									U << "\red <b>WARNING</b>: P����RֆGr�5S 677^%"
+									U << "\red <b>WARNING</b>: Pï¿½ï¿½ï¿½ï¿½RÖGrï¿½5S 677^%"
 									cancel_stealth()
 								if(3)
 									A << "Connecting to kernel..."
-									U << "\red <b>WARNING</b>: �R�r�R_404"
+									U << "\red <b>WARNING</b>: ï¿½Rï¿½rï¿½R_404"
 									A.control_disabled = 0
 								if(4)
 									A << "Connection established and secured. Menu updated."
-									U << "\red <b>W�r#nING</b>: #%@!!WȆ|_4�54@ \nUn�B88l3 T� L�-�o-L�CaT2 ##$!�RN�0..%.."
+									U << "\red <b>Wï¿½r#nING</b>: #%@!!WÈ|_4ï¿½54@ \nUnï¿½B88l3 Tï¿½ Lï¿½-ï¿½o-Lï¿½CaT2 ##$!ï¿½RNï¿½0..%.."
 									grant_AI_verbs()
 									return
 							sleep(s_delay)
@@ -930,7 +930,7 @@ ________________________________________________________________________________
 			U << "There are <B>[s_bombs]</B> smoke bombs remaining."
 			U << "There are <B>[a_boost]</B> adrenaline boosters remaining."
 		else
-			U <<  "�rr�R �a��a�� No-�-� f��N� 3RR�r"
+			U <<  "ï¿½rrï¿½R ï¿½aï¿½ï¿½aï¿½ï¿½ No-ï¿½-ï¿½ fï¿½ï¿½Nï¿½ 3RRï¿½r"
 
 /*
 ===================================================================================
@@ -1385,7 +1385,8 @@ It is possible to destroy the net by the occupant or someone else.
 			if(!isnull(master))//As long as they still exist.
 				master << "\blue <b>SUCCESS</b>: \black transport procedure of \the [affecting] complete."
 
-			M.anchored = 0//Important.
+			M.captured = 0 //Important.
+			M.anchored = initial(M.anchored) //Changes the mob's anchored status to the original one; this is not handled by the can_move proc.
 
 		else//And they are free.
 			M << "\blue You are free of the net!"

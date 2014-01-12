@@ -10,28 +10,27 @@
 
 	var/obj/item/weapon/card/id/wear_id = null // Fix for station bounced radios -- Skie
 	var/greaterform = "Human"                  // Used when humanizing a monkey.
-	var/ico = "monkey"                         // Used when updating icons.
 	var/uni_append = "12C4E2"                  // Small appearance modifier for different species.
 
 /mob/living/carbon/monkey/tajara
 	name = "farwa"
 	voice_name = "farwa"
 	speak_emote = list("mews")
-	ico = "tajkey"
+	icon_state = "tajkey1"
 	uni_append = "0A0E00"
 
 /mob/living/carbon/monkey/skrell
 	name = "neaera"
 	voice_name = "neaera"
 	speak_emote = list("squicks")
-	ico = "skrellkey"
+	icon_state = "skrellkey1"
 	uni_append = "01CC92"
 
 /mob/living/carbon/monkey/unathi
 	name = "stok"
 	voice_name = "stok"
 	speak_emote = list("hisses")
-	ico = "stokkey"
+	icon_state = "stokkey1"
 	uni_append = "044C5D"
 
 /mob/living/carbon/monkey/New()
@@ -48,8 +47,10 @@
 			gender = pick(MALE, FEMALE)
 		dna = new /datum/dna( null )
 		dna.real_name = real_name
-		dna.uni_identity = "00600200A00E0110148FC01300B009"
-		dna.struc_enzymes = "43359156756131E13763334D1C369012032164D4FE4CD61544B6C03F251B6C60A42821D26BA3B0FD6"
+		dna.ResetSE()
+		dna.ResetUI()
+		//dna.uni_identity = "00600200A00E0110148FC01300B009"
+		//dna.struc_enzymes = "43359156756131E13763334D1C369012032164D4FE4CD61544B6C03F251B6C60A42821D26BA3B0FD6"
 		dna.unique_enzymes = md5(name)
 				//////////blah
 		var/gendervar

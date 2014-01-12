@@ -715,8 +715,12 @@ var/global/list/obj/item/device/pda/PDAs = list()
 								U.show_message("\red Energy feeds back into your [src]!", 1)
 								U << browse(null, "window=pda")
 								explode()
+								log_admin("[key_name(U)] just attempted to blow up [P] with the Detomatix cartridge but failed, blowing themselves up")
+								message_admins("[key_name_admin(U)] just attempted to blow up [P] with the Detomatix cartridge but failed, blowing themselves up", 1)
 							else
 								U.show_message("\blue Success!", 1)
+								log_admin("[key_name(U)] just attempted to blow up [P] with the Detomatix cartridge and succeded")
+								message_admins("[key_name_admin(U)] just attempted to blow up [P] with the Detomatix cartridge and succeded", 1)
 								P.explode()
 					else
 						U << "PDA not found."
@@ -939,10 +943,9 @@ var/global/list/obj/item/device/pda/PDAs = list()
 		else
 			//Basic safety check. If either both objects are held by user or PDA is on ground and card is in hand.
 			if(((src in user.contents) && (C in user.contents)) || (istype(loc, /turf) && in_range(src, user) && (C in user.contents)) )
-				if( can_use(user) )//If they can still act.
-					id_check(user, 2)
-					user << "<span class='notice'>You put the ID into \the [src]'s slot.</span>"
-					updateSelfDialog()//Update self dialog on success.
+				id_check(user, 2)
+				user << "<span class='notice'>You put the ID into \the [src]'s slot.</span>"
+				updateSelfDialog()//Update self dialog on success.
 			return	//Return in case of failed check or when successful.
 		updateSelfDialog()//For the non-input related code.
 	else if(istype(C, /obj/item/device/paicard) && !src.pai)
@@ -1038,6 +1041,9 @@ var/global/list/obj/item/device/pda/PDAs = list()
 
 		if(5)
 			if((istype(A, /obj/item/weapon/tank)) || (istype(A, /obj/machinery/portable_atmospherics)))
+				if(istype(A, /obj/item/weapon/tank))
+					var/obj/item/weapon/tank/t = A
+					t.manipulated_by = user.real_name
 				var/obj/icon = A
 				for (var/mob/O in viewers(user, null))
 					O << "\red [user] has used [src] on \icon[icon] [A]"

@@ -1,4 +1,4 @@
-/obj/item/clothing/under/sirusian
+/obj/item/clothing/under/fluff/sirusian
 	name = "Sirusian Uniform"
 	desc = "A uniform from the Federation of Sirius military research division. It has an \"N.T.\" tab on the right shoulder."
 	icon_state = "black"
@@ -7,7 +7,7 @@
 	flags = FPRINT | TABLEPASS
 
 /obj/item/clothing/under/cmodress
-	name = "CMO Dress Uniform."
+	name = "CMO Dress Uniform"
 	desc = "If the station's many hazards haven't knocked em dead, this dress certainly will. It even includes minor biological protection."
 	icon_state = "cmodress"
 	item_state = "cmodress"
@@ -38,4 +38,60 @@
 	icon_state = "sauditalos"
 	item_state = "sauditalos"
 	item_color = "sauditalos"
+	flags = FPRINT | TABLEPASS
+
+/obj/item/clothing/under/captaincasual
+	name = "Captain's Casual Uniform"
+	desc = "Just the right mix of laid back and formal."
+	icon_state = "captaincasual"
+	item_state = "captaincasual"
+	item_color = "captaincasual"
+	flags = FPRINT | TABLEPASS
+
+/obj/item/clothing/under/tanktopblack
+	name = "Black Tank Top"
+	desc = "Perfect for a holodeck vacation."
+	icon_state = "tanktop_bl"
+	item_state = "tanktop_bl"
+	item_color = "tanktop_bl"
+	flags = FPRINT | TABLEPASS
+
+/obj/item/clothing/under/tanktopblazer
+	name = "Blazer Tank Top"
+	desc = "Blazer-colored tank top."
+	icon_state = "tanktop_blazer"
+	item_state = "tanktop_blazer"
+	item_color = "tanktop_blazer"
+	flags = FPRINT | TABLEPASS
+
+/obj/item/clothing/under/tanktopneon
+	name = "Neon Tank Top"
+	desc = "Perfect for the disco dance floor."
+	icon_state = "tanktop_neon"
+	item_state = "tanktop_neon"
+	item_color = "tanktop_neon"
+	flags = FPRINT | TABLEPASS
+
+/obj/item/clothing/under/tanktopred
+	name = "Red Tank Top"
+	desc = "A red-colored tank top."
+	icon_state = "tanktop_red"
+	item_state = "tanktop_red"
+	item_color = "tanktop_red"
+	flags = FPRINT | TABLEPASS
+
+/obj/item/clothing/under/tanktoppink
+	name = "Pink Tank Top"
+	desc = "Pink-colored tank top."
+	icon_state = "tanktop_pink"
+	item_state = "tanktop_pink"
+	item_color = "tanktop_pink"
+	flags = FPRINT | TABLEPASS
+
+/obj/item/clothing/under/layeredshirt
+	name = "Layered Shirt"
+	desc = "A t-shirt layered over a longer sleeved shirt."
+	icon_state = "layeredshirt"
+	item_state = "layeredshirt"
+	item_color = "layeredshirt"
 	flags = FPRINT | TABLEPASS

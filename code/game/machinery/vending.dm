@@ -842,3 +842,37 @@
 					/obj/item/weapon/screwdriver = 5,/obj/item/weapon/crowbar = 5)
 	//everything after the power cell had no amounts, I improvised.  -Sayu
 
+//And here we have one just for Sanctuary.
+/obj/machinery/vending/clothesprinter
+	name = "Clothing Printer"
+	desc = "A machine that manufactures clothing on request."
+	icon_state = "clothvend"
+	req_access_txt = ""
+	products = list(/obj/item/clothing/under/swimsuit/black = 10, /obj/item/clothing/under/swimsuit/blue = 10, /obj/item/clothing/under/swimsuit/purple = 10,
+					/obj/item/clothing/under/swimsuit/green = 10, /obj/item/clothing/under/swimsuit/red = 10, /obj/item/clothing/under/swimsuit = 10,
+					/obj/item/clothing/under/fluff/jumpsuitdown = 10, /obj/item/clothing/under/suit_jacket/female = 10, /obj/item/clothing/under/dress/dress_fire = 10,
+					/obj/item/clothing/under/dress/dress_green = 10, /obj/item/clothing/under/dress/dress_orange = 10, /obj/item/clothing/under/dress/dress_pink = 10,
+					/obj/item/clothing/under/dress/dress_yellow = 10, /obj/item/clothing/under/dress/dress_saloon = 10, /obj/item/clothing/under/dress/plaid_blue = 10,
+					/obj/item/clothing/under/dress/plaid_red = 10, /obj/item/clothing/under/dress/plaid_purple = 10, /obj/item/clothing/under/det/fluff/retpoluniform = 10,
+					/obj/item/clothing/suit/ianshirt = 10, /obj/item/clothing/under/lawyer/purpsuit = 10, /obj/item/clothing/under/rank/mailman = 10,
+					/obj/item/clothing/under/rank/dispatch = 10, /obj/item/clothing/under/color/black = 10, /obj/item/clothing/under/color/blackf = 10,
+					/obj/item/clothing/under/color/orange = 10, /obj/item/clothing/under/color/pink = 10, /obj/item/clothing/under/color/red = 10,
+					/obj/item/clothing/under/color/white = 10, /obj/item/clothing/under/sauditalos = 10, /obj/item/clothing/under/mensjeans = 10,
+					/obj/item/clothing/under/partydress = 10, , /obj/item/clothing/under/tanktopblack = 10,
+					/obj/item/clothing/under/tanktopblazer = 10, /obj/item/clothing/under/tanktopneon = 10, /obj/item/clothing/under/tanktopred = 10,
+					/obj/item/clothing/under/tanktoppink = 10, /obj/item/clothing/under/layeredshirt = 10)
+	prices = list( /obj/item/clothing/under/swimsuit/black = 20, /obj/item/clothing/under/swimsuit/blue = 20, /obj/item/clothing/under/swimsuit/purple = 20,
+					/obj/item/clothing/under/swimsuit/green = 20, /obj/item/clothing/under/swimsuit/red = 20, /obj/item/clothing/under/swimsuit = 20,
+					/obj/item/clothing/under/fluff/jumpsuitdown = 20, /obj/item/clothing/under/suit_jacket/female = 20, /obj/item/clothing/under/dress/dress_fire = 20,
+					/obj/item/clothing/under/dress/dress_green = 20, /obj/item/clothing/under/dress/dress_orange = 20, /obj/item/clothing/under/dress/dress_pink = 20,
+					/obj/item/clothing/under/dress/dress_yellow = 20, /obj/item/clothing/under/dress/dress_saloon = 20, /obj/item/clothing/under/dress/plaid_blue = 20,
+					/obj/item/clothing/under/dress/plaid_red = 20, /obj/item/clothing/under/dress/plaid_purple = 20, /obj/item/clothing/under/det/fluff/retpoluniform = 20,
+					/obj/item/clothing/suit/ianshirt = 20, /obj/item/clothing/under/lawyer/purpsuit = 20, /obj/item/clothing/under/rank/mailman = 20,
+					/obj/item/clothing/under/rank/dispatch = 20, /obj/item/clothing/under/color/black = 20, /obj/item/clothing/under/color/blackf = 20,
+					/obj/item/clothing/under/color/orange = 20, /obj/item/clothing/under/color/pink = 20, /obj/item/clothing/under/color/red = 20,
+					/obj/item/clothing/under/color/white = 20, /obj/item/clothing/under/sauditalos = 20, /obj/item/clothing/under/mensjeans = 20,
+					/obj/item/clothing/under/partydress = 20, , /obj/item/clothing/under/tanktopblack = 20,
+					/obj/item/clothing/under/tanktopblazer = 20, /obj/item/clothing/under/tanktopneon = 20, /obj/item/clothing/under/tanktopred = 20,
+					/obj/item/clothing/under/tanktoppink = 20, /obj/item/clothing/under/layeredshirt = )
+
+

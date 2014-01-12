@@ -1,8 +1,8 @@
 /var/const/OPEN = 1
 /var/const/CLOSED = 2
 /obj/machinery/door/firedoor
-	name = "\improper Emergency Firelock"
-	desc = "Emergency air-tight shutter, capable of sealing off breached areas. Apply Crowbar."
+	name = "\improper Emergency Hazardlock"
+	desc = "Emergency air-tight shutter, capable of sealing off breached areas. Apply crowbar."
 	icon = 'icons/obj/doors/Doorfire.dmi'
 	icon_state = "door_open"
 	req_one_access = list(access_atmospherics, access_engine_equip)
@@ -152,6 +152,12 @@
 			"You hear someone struggle and metal straining.")
 			return
 
+		var/area/A = get_area(src)
+		ASSERT(istype(A))
+		if(A.master)
+			A = A.master
+		var/alarmed = A.air_doors_activated || A.fire
+
 		user.visible_message("\red \The [user] starts to force \the [src] [density ? "open" : "closed"] with \a [C]!",\
 				"You start forcing \the [src] [density ? "open" : "closed"] with \the [C]!",\
 				"You hear metal strain.")
@@ -168,6 +174,9 @@
 			if(density)
 				spawn(0)
 					open()
+					spawn(50)
+						if (alarmed)
+							nextstate = CLOSED
 			else
 				spawn(0)
 					close()

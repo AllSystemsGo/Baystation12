@@ -945,6 +945,14 @@ proc/process_ghost_teleport_locs()
 		name = "\improper Chief Engineer's office"
 		icon_state = "engine_control"
 
+	atmosoffice
+		name = "\improper Atmospherics Front Office"
+		icon_state = "atmo_office"
+
+	dorm
+		name = "\improper Engineering Dormitory"
+		icon_state = "engine_dorm"
+
 
 //Solars
 
@@ -1149,6 +1157,10 @@ proc/process_ghost_teleport_locs()
 	name = "\improper Medical Treatment Center"
 	icon_state = "exam_room"
 
+/area/medical/dorm
+	name = "\improper Medical Dormitory"
+	icon_state = "meddorm"
+
 //Security
 
 /area/security/main
@@ -1284,6 +1296,14 @@ proc/process_ghost_teleport_locs()
 	name = "Hydroponics"
 	icon_state = "hydro"
 
+/area/mrdormhall
+	name = "\improper Res./Med. Dormitory Hallway"
+	icon_state = "dorm_hall"
+
+/area/shopcent
+	name = "\improper Shopping Center"
+	icon_state = "shoppingcenter"
+
 //Toxins
 
 /area/toxins/lab
@@ -1325,6 +1345,18 @@ proc/process_ghost_teleport_locs()
 /area/toxins/server
 	name = "\improper Server Room"
 	icon_state = "server"
+
+/area/toxins/dorm
+	name = "\improper Research Dormitory"
+	icon_state = "toxdorm"
+
+/area/toxins/telesci
+	name = "\improper Blue Space Lab"
+	icon_state = "telesci"
+
+/area/toxins/foyer
+	name = "Research Division Foyer"
+	icon_state = "toxfoyer"
 
 //Storage
 

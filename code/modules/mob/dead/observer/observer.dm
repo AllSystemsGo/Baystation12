@@ -26,7 +26,7 @@
 	see_invisible = SEE_INVISIBLE_OBSERVER
 	see_in_dark = 100
 	verbs += /mob/dead/observer/proc/dead_tele
-	
+
 	stat = DEAD
 
 	var/turf/T
@@ -93,12 +93,12 @@ Works together with spawning an observer, noted above.
 
 /mob/dead/observer/Life()
 	..()
-	if(!loc) return		
+	if(!loc) return
 	if(!client) return 0
 
 
 	if(client.images.len)
-		for(var/image/hud in client.images)	
+		for(var/image/hud in client.images)
 			if(copytext(hud.icon_state,1,4) == "hud")
 				client.images.Remove(hud)
 	if(antagHUD)
@@ -145,7 +145,7 @@ Works together with spawning an observer, noted above.
 		var/foundVirus = 0
 		if(patient.virus2.len)
 			foundVirus = 1
-		if(!C) return 
+		if(!C) return
 		holder = patient.hud_list[HEALTH_HUD]
 		if(patient.stat == 2)
 			holder.icon_state = "hudhealth-100"
@@ -162,8 +162,8 @@ Works together with spawning an observer, noted above.
 			holder.icon_state = "hudill"
 		else
 			holder.icon_state = "hudhealthy"
-		C.images += holder	
-		
+		C.images += holder
+
 
 /mob/dead/proc/assess_targets(list/target_list, mob/dead/observer/U)
 	var/icon/tempHud = 'icons/mob/hud.dmi'
@@ -220,11 +220,16 @@ This is the proc mobs get to turn into a ghost. Forked from ghostize due to comp
 	if(stat == DEAD)
 		ghostize(1)
 	else
+		//Don't want people to be able to ghost unless they're dead... Stay IC!
+		src << "\blue You must be dead to do that!"
+
+		/*
 		var/response = alert(src, "Are you -sure- you want to ghost?\n(You are alive. If you ghost, you won't be able to play again this round You can't change your mind so choose wisely!)","Are you sure you want to ghost?","Ghost","Stay in body")
 		if(response != "Ghost")	return	//didn't want to ghost after-all
 		resting = 1
 		var/mob/dead/observer/ghost = ghostize(0)						//0 parameter is so we can never re-enter our body, "Charlie, you can never come baaaack~" :3
 		ghost.timeofdeath = world.time // Because the living mob won't have a time of death and we want the respawn timer to work properly.
+		*/
 	return
 
 
@@ -319,7 +324,7 @@ This is the proc mobs get to turn into a ghost. Forked from ghostize due to comp
 	if(jobban_isbanned(M, "AntagHUD"))
 		src << "\red <B>You have been banned from using this feature</B>"
 		return
-	if(config.antag_hud_restricted && !M.has_enabled_antagHUD &&!client.holder) 
+	if(config.antag_hud_restricted && !M.has_enabled_antagHUD &&!client.holder)
 		var/response = alert(src, "If you turn this on, you will not be able to take any part in the round.","Are you sure you want to turn this feature on?","Yes","No")
 		if(response == "No") return
 		M.can_reenter_corpse = 0

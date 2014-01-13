@@ -173,7 +173,7 @@
 				if(D)
 					var/transaction_amount = currently_vending.price
 					if(transaction_amount <= D.money)
-	
+
 						//transfer the money
 						D.money -= transaction_amount
 						vendor_account.money += transaction_amount
@@ -895,6 +895,6 @@
 					/obj/item/clothing/under/color/white = 20, /obj/item/clothing/under/sauditalos = 20, /obj/item/clothing/under/mensjeans = 20,
 					/obj/item/clothing/under/partydress = 20, , /obj/item/clothing/under/tanktopblack = 20,
 					/obj/item/clothing/under/tanktopblazer = 20, /obj/item/clothing/under/tanktopneon = 20, /obj/item/clothing/under/tanktopred = 20,
-					/obj/item/clothing/under/tanktoppink = 20, /obj/item/clothing/under/layeredshirt = )
+					/obj/item/clothing/under/tanktoppink = 20, /obj/item/clothing/under/layeredshirt = 20)
 
 

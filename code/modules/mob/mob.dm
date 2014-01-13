@@ -348,7 +348,7 @@ var/list/slot_equipment_priority = list( \
 		usr << "\blue Respawn is disabled."
 		return
 
-	/* Removed the respawn timing check. If it's enabled, we want them able to respawn. --ASG
+	/* Removed the respawn timing check. If it's enabled, we want them able to respawn. --ASG */
 
 	else
 		var/deathtime = world.time - src.timeofdeath

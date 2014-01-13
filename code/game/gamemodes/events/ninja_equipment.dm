@@ -1,4 +1,4 @@
-﻿//For the love of god,space out your code! This is a nightmare to read.
+//For the love of god,space out your code! This is a nightmare to read.
 
 //This file was auto-corrected by findeclaration.exe on 25.5.2012 20:42:31
 

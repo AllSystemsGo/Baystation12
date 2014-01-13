@@ -585,14 +585,6 @@
 	icon = 'icons/obj/custom_items.dmi'
 	icon_state = "labcoat_pink_open"
 
-/obj/item/clothing/suit/storage/det_suit/fluff/graycoat //vinceluk: Seth Sealis
-	name = "gray coat"
-	desc = "Old, worn out coat. It's seen better days."
-	icon = 'icons/obj/custom_items.dmi'
-	icon_state = "graycoat"
-	item_state = "graycoat"
-	item_color = "graycoat"
-
 /obj/item/clothing/suit/storage/det_suit/fluff/leatherjack //atomicdog92: Seth Sealis
 	name = "leather jacket"
 	desc = "A black leather coat, popular amongst punks, greasers, and other galactic scum."

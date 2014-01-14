@@ -885,9 +885,9 @@
 					/obj/item/clothing/under/tanktoppink = 10, /obj/item/clothing/under/layeredshirt = 10, /obj/item/clothing/under/blackskirt = 10,
 					/obj/item/clothing/under/schoolgirl = 10, /obj/item/clothing/under/pirate = 10, /obj/item/clothing/under/soviet = 10,
 					/obj/item/clothing/under/redcoat = 10, /obj/item/clothing/under/kilt = 10, /obj/item/clothing/under/gladiator = 10,
-					/obj/item/clothing/under/sundress = 10, /obj/item/clothing/suit/greatcoat = 10, /obj/item/clothing/shoes/digitigradeboots = 10,
-					/obj/item/clothing/under/fluff/mai_yang_dress = 10, /obj/item/clothing/under/fluff/sakura_hokkaido_kimono = 10,
-					/obj/item/clothing/suit/storage/labcoat/fluff/red = 10)
+					/obj/item/clothing/under/sundress = 10, /obj/item/clothing/shoes/digitigradeboots = 10,
+					/obj/item/clothing/under/fluff/mai_yang_dress = 10, /obj/item/clothing/under/fluff/sakura_hokkaido_kimono = 10/*,
+					/obj/item/clothing/suit/storage/labcoat/fluff/red = 10*/)
 	prices = list( /obj/item/clothing/under/swimsuit/black = 20, /obj/item/clothing/under/swimsuit/blue = 20, /obj/item/clothing/under/swimsuit/purple = 20,
 					/obj/item/clothing/under/swimsuit/green = 20, /obj/item/clothing/under/swimsuit/red = 20, /obj/item/clothing/under/swimsuit = 20,
 					/obj/item/clothing/under/fluff/jumpsuitdown = 20, /obj/item/clothing/under/suit_jacket/female = 20, /obj/item/clothing/under/dress/dress_fire = 20,
@@ -903,8 +903,8 @@
 					/obj/item/clothing/under/tanktoppink = 20, /obj/item/clothing/under/layeredshirt = 20, /obj/item/clothing/under/blackskirt = 20,
 					/obj/item/clothing/under/schoolgirl = 20, /obj/item/clothing/under/pirate = 20, /obj/item/clothing/under/soviet = 20,
 					/obj/item/clothing/under/redcoat = 20, /obj/item/clothing/under/kilt = 20, /obj/item/clothing/under/gladiator = 20,
-					/obj/item/clothing/under/sundress = 20, /obj/item/clothing/suit/greatcoat = 20, /obj/item/clothing/shoes/digitigradeboots = 20,
-					/obj/item/clothing/under/fluff/mai_yang_dress = 20, /obj/item/clothing/under/fluff/sakura_hokkaido_kimono = 20,
-					/obj/item/clothing/suit/storage/labcoat/fluff/red = 20)
+					/obj/item/clothing/under/sundress = 20, /obj/item/clothing/shoes/digitigradeboots = 20,
+					/obj/item/clothing/under/fluff/mai_yang_dress = 20, /obj/item/clothing/under/fluff/sakura_hokkaido_kimono = 20/*,
+					/obj/item/clothing/suit/storage/labcoat/fluff/red = 20*/)
 
 

@@ -4588,7 +4588,7 @@
 "bKl" = (/obj/structure/closet/l3closet,/turf/simulated/floor{icon_state = "white"},/area/medical/sleeper)
 "bKm" = (/obj/structure/closet/secure_closet/medical3,/obj/machinery/alarm{pixel_y = 24},/turf/simulated/floor{icon_state = "white"},/area/medical/sleeper)
 "bKn" = (/obj/structure/closet/secure_closet/medical3,/obj/machinery/camera{c_tag = "Medbay Storage"; dir = 2; network = list("SS13","Medical")},/turf/simulated/floor{icon_state = "white"},/area/medical/sleeper)
-"bKo" = (/obj/structure/table,/obj/item/weapon/storage/box/bodybags{pixel_x = 3; pixel_y = 3},/obj/item/weapon/storage/box/rxglasses,/turf/simulated/floor{icon_state = "white"},/area/medical/sleeper)
+"bKo" = (/obj/structure/table,/obj/item/weapon/storage/box/bodybags{pixel_x = 3; pixel_y = 3},/obj/item/weapon/storage/box/rxglasses,/obj/item/clothing/glasses/meson/prescription,/obj/item/clothing/glasses/meson/prescription,/turf/simulated/floor{icon_state = "white"},/area/medical/sleeper)
 "bKp" = (/obj/structure/table,/obj/item/weapon/storage/box/beakers{pixel_x = -1; pixel_y = -1; pixel_x = 2; pixel_y = 2},/obj/item/weapon/storage/box/syringes,/obj/item/weapon/storage/box/cdeathalarm_kit,/turf/simulated/floor{icon_state = "white"},/area/medical/sleeper)
 "bKq" = (/obj/structure/disposalpipe/segment,/turf/simulated/floor{dir = 8; icon_state = "whiteredcorner"},/area/medical/medbay)
 "bKr" = (/obj/structure/stool/bed/chair/comfy/teal{icon_state = "comfychair_teal"; dir = 4},/turf/simulated/floor{icon_state = "cafeteria"; dir = 5},/area/medical/medbay)

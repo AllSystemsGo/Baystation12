@@ -907,4 +907,125 @@
 					/obj/item/clothing/under/fluff/mai_yang_dress = 20, /obj/item/clothing/under/fluff/sakura_hokkaido_kimono = 20/*,
 					/obj/item/clothing/suit/storage/labcoat/fluff/red = 20*/)
 
+/obj/machinery/vending/clothesprinter/unisex
+	name = "Unisex/Miscellaneous Clothing Printer"
+	desc = "A machine that manufactures unisex and miscellaneous clothing on request."
+	icon_state = "clothvend"
+	products = list(/obj/item/clothing/under/color/black = 10,
+					/obj/item/clothing/under/color/orange = 10, /obj/item/clothing/under/color/pink = 10, /obj/item/clothing/under/color/red = 10,
+					/obj/item/clothing/under/color/white = 10,
+					/obj/item/clothing/under/redcoat = 10, /obj/item/clothing/under/fluff/jumpsuitdown = 10, /obj/item/clothing/suit/ianshirt = 10,
+					/obj/item/clothing/under/bluepyjamas = 10, /obj/item/clothing/under/redpyjamas = 10,
+					/obj/item/clothing/shoes/digitigradeboots = 10, /obj/item/clothing/shoes/sandal = 10, /obj/item/clothing/shoes/sandal/marisa = 10,
+					/obj/item/clothing/shoes/jackboots = 10, /obj/item/clothing/shoes/cult = 10, /obj/item/clothing/shoes/slippers = 10,
+					/obj/item/clothing/shoes/laceup = 10, /obj/item/clothing/shoes/black = 10, /obj/item/clothing/shoes/blue = 10,
+					/obj/item/clothing/shoes/green = 10, /obj/item/clothing/shoes/yellow = 10, /obj/item/clothing/shoes/purple = 10,
+					/obj/item/clothing/shoes/red = 10, /obj/item/clothing/shoes/white = 10, /obj/item/clothing/shoes/leather = 10,
+					/obj/item/clothing/shoes/rainbow = 10)
+	prices = list(  /obj/item/clothing/under/color/black = 10,
+					/obj/item/clothing/under/color/orange = 10, /obj/item/clothing/under/color/pink = 10, /obj/item/clothing/under/color/red = 10,
+					/obj/item/clothing/under/color/white = 10,
+					/obj/item/clothing/under/redcoat = 10, /obj/item/clothing/under/fluff/jumpsuitdown = 10, /obj/item/clothing/suit/ianshirt = 10,
+					/obj/item/clothing/under/bluepyjamas = 10, /obj/item/clothing/under/redpyjamas = 10,
+					/obj/item/clothing/shoes/digitigradeboots = 10, /obj/item/clothing/shoes/sandal = 10, /obj/item/clothing/shoes/sandal/marisa = 10,
+					/obj/item/clothing/shoes/jackboots = 10, /obj/item/clothing/shoes/cult = 10, /obj/item/clothing/shoes/slippers = 10,
+					/obj/item/clothing/shoes/laceup = 10, /obj/item/clothing/shoes/black = 10, /obj/item/clothing/shoes/blue = 10,
+					/obj/item/clothing/shoes/green = 10, /obj/item/clothing/shoes/yellow = 10, /obj/item/clothing/shoes/purple = 10,
+					/obj/item/clothing/shoes/red = 10, /obj/item/clothing/shoes/white = 10, /obj/item/clothing/shoes/leather = 10,
+					/obj/item/clothing/shoes/rainbow = 10)
 
+/obj/machinery/vending/clothesprinter/female
+	name = "Female Clothes Printer"
+	desc = "A machine that manufactures clothing primarily intended for women."
+	icon_state = "clothvend"
+	products = list(/obj/item/clothing/under/swimsuit/black = 10, /obj/item/clothing/under/swimsuit/blue = 10, /obj/item/clothing/under/swimsuit/purple = 10,
+					/obj/item/clothing/under/swimsuit/green = 10, /obj/item/clothing/under/swimsuit/red = 10, /obj/item/clothing/under/swimsuit = 10,
+					/obj/item/clothing/under/suit_jacket/female = 10, /obj/item/clothing/under/dress/dress_fire = 10,
+					/obj/item/clothing/under/dress/dress_green = 10, /obj/item/clothing/under/dress/dress_orange = 10, /obj/item/clothing/under/dress/dress_pink = 10,
+					/obj/item/clothing/under/dress/dress_yellow = 10, /obj/item/clothing/under/dress/dress_saloon = 10, /obj/item/clothing/under/dress/plaid_blue = 10,
+					/obj/item/clothing/under/dress/plaid_red = 10, /obj/item/clothing/under/dress/plaid_purple = 10,
+					/obj/item/clothing/under/sauditalos = 10,
+					/obj/item/clothing/under/partydress = 10, /obj/item/clothing/under/tanktopblack = 10,
+					/obj/item/clothing/under/tanktopblazer = 10, /obj/item/clothing/under/tanktopneon = 10, /obj/item/clothing/under/tanktopred = 10,
+					/obj/item/clothing/under/tanktoppink = 10, /obj/item/clothing/under/blackskirt = 10,
+					/obj/item/clothing/under/schoolgirl = 10,
+					/obj/item/clothing/under/sundress = 10,
+					/obj/item/clothing/under/fluff/mai_yang_dress = 10, /obj/item/clothing/under/fluff/sakura_hokkaido_kimono = 10)
+	prices = list(  /obj/item/clothing/under/swimsuit/black = 20, /obj/item/clothing/under/swimsuit/blue = 20, /obj/item/clothing/under/swimsuit/purple = 20,
+					/obj/item/clothing/under/swimsuit/green = 20, /obj/item/clothing/under/swimsuit/red = 20, /obj/item/clothing/under/swimsuit = 20,
+					/obj/item/clothing/under/suit_jacket/female = 20, /obj/item/clothing/under/dress/dress_fire = 20,
+					/obj/item/clothing/under/dress/dress_green = 20, /obj/item/clothing/under/dress/dress_orange = 20, /obj/item/clothing/under/dress/dress_pink = 20,
+					/obj/item/clothing/under/dress/dress_yellow = 20, /obj/item/clothing/under/dress/dress_saloon = 20, /obj/item/clothing/under/dress/plaid_blue = 20,
+					/obj/item/clothing/under/dress/plaid_red = 20, /obj/item/clothing/under/dress/plaid_purple = 20,
+					/obj/item/clothing/under/sauditalos = 20,
+					/obj/item/clothing/under/partydress = 20, /obj/item/clothing/under/tanktopblack = 20,
+					/obj/item/clothing/under/tanktopblazer = 20, /obj/item/clothing/under/tanktopneon = 20, /obj/item/clothing/under/tanktopred = 20,
+					/obj/item/clothing/under/tanktoppink = 20, /obj/item/clothing/under/blackskirt = 20,
+					/obj/item/clothing/under/schoolgirl = 20,
+					/obj/item/clothing/under/sundress = 20,
+					/obj/item/clothing/under/fluff/mai_yang_dress = 20, /obj/item/clothing/under/fluff/sakura_hokkaido_kimono = 20)
+
+/obj/machinery/vending/clothesprinter/male
+	name = "Male Clothing Printer"
+	desc = "A machine that manufactures clothing primarily intended for men."
+	icon_state = "clothvend"
+	products = list(/obj/item/clothing/under/det/fluff/retpoluniform = 10,
+					/obj/item/clothing/under/lawyer/purpsuit = 10, /obj/item/clothing/under/rank/mailman = 10,
+					/obj/item/clothing/under/rank/dispatch = 10,
+					/obj/item/clothing/under/mensjeans = 10,
+					/obj/item/clothing/under/layeredshirt = 10,
+					/obj/item/clothing/under/kilt = 10)
+	prices = list(  /obj/item/clothing/under/det/fluff/retpoluniform = 20,
+					/obj/item/clothing/under/lawyer/purpsuit = 20, /obj/item/clothing/under/rank/mailman = 20,
+					/obj/item/clothing/under/rank/dispatch = 20,
+					/obj/item/clothing/under/mensjeans = 20,
+					/obj/item/clothing/under/layeredshirt = 20,
+					/obj/item/clothing/under/kilt = 20)
+
+/obj/machinery/vending/clothesprinter/over
+	name = "Let's Pretend"
+	desc = "A machine that manufactures over-clothing and costumes."
+	icon_state = "clothvend"
+	products = list(/obj/item/clothing/under/gladiator = 10, /obj/item/clothing/under/pirate = 10, /obj/item/clothing/under/soviet = 10,
+					/obj/item/clothing/suit/wizrobe/marisa/fake = 10,
+					/obj/item/clothing/suit/leathercoat = 10, /obj/item/clothing/suit/browncoat = 10, /obj/item/clothing/suit/neocoat = 10,
+					/obj/item/clothing/suit/bio_suit/plaguedoctorsuit = 1,
+					/obj/item/clothing/suit/storage/labcoat = 10, /obj/item/clothing/suit/storage/labcoat/mad = 10, /obj/item/clothing/suit/hgpirate = 10,
+					/obj/item/clothing/suit/johnny_coat = 10, /obj/item/clothing/suit/justice = 10, /obj/item/clothing/suit/judgerobe = 10,
+					/obj/item/clothing/suit/wcoat = 10, /obj/item/clothing/suit/apron/overalls = 10, /obj/item/clothing/suit/hastur = 10,
+					/obj/item/clothing/suit/imperium_monk = 10, /obj/item/clothing/suit/chickensuit = 10, /obj/item/clothing/suit/monkeysuit = 10,
+					/obj/item/clothing/suit/holidaypriest = 10)
+	prices = list(  /obj/item/clothing/under/gladiator = 20, /obj/item/clothing/under/pirate = 20, /obj/item/clothing/under/soviet = 20,
+					/obj/item/clothing/suit/wizrobe/marisa/fake = 20,
+					/obj/item/clothing/suit/leathercoat = 20, /obj/item/clothing/suit/browncoat = 20, /obj/item/clothing/suit/neocoat = 20,
+					/obj/item/clothing/suit/bio_suit/plaguedoctorsuit = 20,
+					/obj/item/clothing/suit/storage/labcoat = 20, /obj/item/clothing/suit/storage/labcoat/mad = 20, /obj/item/clothing/suit/hgpirate = 20,
+					/obj/item/clothing/suit/johnny_coat = 20, /obj/item/clothing/suit/justice = 20, /obj/item/clothing/suit/judgerobe = 20,
+					/obj/item/clothing/suit/wcoat = 20, /obj/item/clothing/suit/apron/overalls = 20, /obj/item/clothing/suit/hastur = 20,
+					/obj/item/clothing/suit/imperium_monk = 20, /obj/item/clothing/suit/chickensuit = 20, /obj/item/clothing/suit/monkeysuit = 20,
+					/obj/item/clothing/suit/holidaypriest = 20)
+
+/obj/machinery/vending/clothesprinter/accessories
+	name = "Accessory Printer"
+	desc = "A machine that manufactures accessories on request."
+	icon_state = "clothvend"
+	products = list(/obj/item/clothing/head/plaguedoctorhat = 10, /obj/item/clothing/mask/gas/plaguedoctor = 1,
+					/obj/item/clothing/mask/gas/monkeymask = 10,
+					/obj/item/clothing/mask/gas/owl_mask = 10, /obj/item/clothing/mask/fakemoustache = 10, /obj/item/clothing/mask/bluescarf = 10,
+					/obj/item/clothing/mask/redscarf = 10, /obj/item/clothing/mask/greenscarf = 10, /obj/item/clothing/head/hairflower = 10, /obj/item/clothing/head/that = 10
+					/obj/item/clothing/head/redcoat = 10, /obj/item/clothing/head/wizard/marisa/fake = 10, /obj/item/clothing/head/mailman = 10,
+					/obj/item/clothing/head/hasturhood = 10, /obj/item/clothing/head/greenbandana = 10, /obj/item/clothing/head/flatcap = 10,
+					/obj/item/clothing/head/pirate = 10, /obj/item/clothing/head/hgpiratecap = 10, /obj/item/clothing/head/bandana = 10,
+					/obj/item/clothing/head/beaverhat = 10, /obj/item/clothing/head/fedora = 10, /obj/item/clothing/head/feathertrilby = 10,
+					/obj/item/clothing/head/bowlerhat = 10, /obj/item/clothing/head/chicken = 10, /obj/item/clothing/head/witchwig = 10,
+					/obj/item/clothing/head/ushanka = 10, /obj/item/clothing/glasses/eyepatch = 10, /obj/item/clothing/glasses/monocle = 10)
+	prices = list(  /obj/item/clothing/head/plaguedoctorhat = 20, /obj/item/clothing/mask/gas/plaguedoctor = 20,
+					/obj/item/clothing/mask/gas/monkeymask = 20,
+					/obj/item/clothing/mask/gas/owl_mask = 20, /obj/item/clothing/mask/fakemoustache = 20, /obj/item/clothing/mask/bluescarf = 20,
+					/obj/item/clothing/mask/redscarf = 20, /obj/item/clothing/mask/greenscarf = 20, /obj/item/clothing/head/hairflower = 20, /obj/item/clothing/head/that = 20
+					/obj/item/clothing/head/redcoat = 20, /obj/item/clothing/head/wizard/marisa/fake = 20, /obj/item/clothing/head/mailman = 20,
+					/obj/item/clothing/head/hasturhood = 20, /obj/item/clothing/head/greenbandana = 20, /obj/item/clothing/head/flatcap = 20,
+					/obj/item/clothing/head/pirate = 20, /obj/item/clothing/head/hgpiratecap = 20, /obj/item/clothing/head/bandana = 20,
+					/obj/item/clothing/head/beaverhat = 20, /obj/item/clothing/head/fedora = 20, /obj/item/clothing/head/feathertrilby = 20,
+					/obj/item/clothing/head/bowlerhat = 20, /obj/item/clothing/head/chicken = 20, /obj/item/clothing/head/witchwig = 20,
+					/obj/item/clothing/head/ushanka = 20, /obj/item/clothing/glasses/eyepatch = 20, /obj/item/clothing/glasses/monocle = 20)

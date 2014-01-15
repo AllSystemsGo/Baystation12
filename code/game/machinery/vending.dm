@@ -1012,7 +1012,7 @@
 	products = list(/obj/item/clothing/head/plaguedoctorhat = 10, /obj/item/clothing/mask/gas/plaguedoctor = 1,
 					/obj/item/clothing/mask/gas/monkeymask = 10,
 					/obj/item/clothing/mask/gas/owl_mask = 10, /obj/item/clothing/mask/fakemoustache = 10, /obj/item/clothing/mask/bluescarf = 10,
-					/obj/item/clothing/mask/redscarf = 10, /obj/item/clothing/mask/greenscarf = 10, /obj/item/clothing/head/hairflower = 10, /obj/item/clothing/head/that = 10
+					/obj/item/clothing/mask/redscarf = 10, /obj/item/clothing/mask/greenscarf = 10, /obj/item/clothing/head/hairflower = 10, /obj/item/clothing/head/that = 10,
 					/obj/item/clothing/head/redcoat = 10, /obj/item/clothing/head/wizard/marisa/fake = 10, /obj/item/clothing/head/mailman = 10,
 					/obj/item/clothing/head/hasturhood = 10, /obj/item/clothing/head/greenbandana = 10, /obj/item/clothing/head/flatcap = 10,
 					/obj/item/clothing/head/pirate = 10, /obj/item/clothing/head/hgpiratecap = 10, /obj/item/clothing/head/bandana = 10,
@@ -1022,7 +1022,7 @@
 	prices = list(  /obj/item/clothing/head/plaguedoctorhat = 20, /obj/item/clothing/mask/gas/plaguedoctor = 20,
 					/obj/item/clothing/mask/gas/monkeymask = 20,
 					/obj/item/clothing/mask/gas/owl_mask = 20, /obj/item/clothing/mask/fakemoustache = 20, /obj/item/clothing/mask/bluescarf = 20,
-					/obj/item/clothing/mask/redscarf = 20, /obj/item/clothing/mask/greenscarf = 20, /obj/item/clothing/head/hairflower = 20, /obj/item/clothing/head/that = 20
+					/obj/item/clothing/mask/redscarf = 20, /obj/item/clothing/mask/greenscarf = 20, /obj/item/clothing/head/hairflower = 20, /obj/item/clothing/head/that = 20,
 					/obj/item/clothing/head/redcoat = 20, /obj/item/clothing/head/wizard/marisa/fake = 20, /obj/item/clothing/head/mailman = 20,
 					/obj/item/clothing/head/hasturhood = 20, /obj/item/clothing/head/greenbandana = 20, /obj/item/clothing/head/flatcap = 20,
 					/obj/item/clothing/head/pirate = 20, /obj/item/clothing/head/hgpiratecap = 20, /obj/item/clothing/head/bandana = 20,

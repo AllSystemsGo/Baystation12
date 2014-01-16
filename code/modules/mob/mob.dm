@@ -349,7 +349,7 @@ var/list/slot_equipment_priority = list( \
 		return
 
 	/* Removed the respawn timing check. If it's enabled, we want them able to respawn. --ASG */
-
+	/*
 	else
 		var/deathtime = world.time - src.timeofdeath
 		if(istype(src,/mob/dead/observer))
@@ -373,6 +373,7 @@ var/list/slot_equipment_priority = list( \
 			return
 		else
 			usr << "You can respawn now, enjoy your new life!"
+	*/
 
 	log_game("[usr.name]/[usr.key] used abandon mob.")
 

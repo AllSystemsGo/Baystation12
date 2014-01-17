@@ -71,8 +71,9 @@ Filter types:
 		var/pressure_delta = target_pressure - output_starting_pressure
 		var/transfer_moles
 
+		//double air moved... should help keep the filter line in atmos from being as flooded.
 		if(air1.temperature > 0)
-			transfer_moles = pressure_delta*air3.volume/(air1.temperature * R_IDEAL_GAS_EQUATION)
+			transfer_moles = 2*pressure_delta*air3.volume/(air1.temperature * R_IDEAL_GAS_EQUATION)
 
 		//Actually transfer the gas
 

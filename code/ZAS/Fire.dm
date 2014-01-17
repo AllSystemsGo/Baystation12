@@ -20,7 +20,7 @@ turf/proc/hotspot_expose(exposed_temperature, exposed_volume, soh = 0)
 
 
 turf/simulated/hotspot_expose(exposed_temperature, exposed_volume, soh)
-	if(fire_protection > world.time-300)
+	if(fire_protection > world.time-1500)
 		return 0
 	if(locate(/obj/fire) in src)
 		return 1
@@ -119,7 +119,7 @@ turf/simulated/hotspot_expose(exposed_temperature, exposed_volume, soh)
 				if(!acs.check_recombustability(liq)) continue
 				//If extinguisher mist passed over the turf it's trying to spread to, don't spread and
 				//reduce firelevel.
-				if(enemy_tile.fire_protection > world.time-30)
+				if(enemy_tile.fire_protection > world.time-1500)
 					firelevel -= 1.5
 					continue
 

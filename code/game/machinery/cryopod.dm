@@ -313,6 +313,7 @@ obj/machinery/computer/cryopod/Topic(href, href_list)
 
 			M << "\blue You feel cool air surround you. You go numb as your senses turn inward."
 			M << "\blue <b>If you ghost, log out or close your client now, your character will shortly be permanently removed from the round.</b>"
+			M << "\blue NOTE! Other players will be able to recover most of your items."
 			occupant = M
 			time_entered = world.time
 
